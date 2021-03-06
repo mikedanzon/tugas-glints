@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/* SET UP */
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: snow;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.item {
+  padding: 8px;
+  background-color: white;
+  border: 4px solid tomato;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.height-50 {
+  height: 50vh;
+}
+
+/* Task 1 - Pancake Stack */
+
+.task-1.container {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  height: 500px;
+  width: 300px;
+}
+
+/* Task 2 - Simple 12 Columns Grid Layout*/
+
+.task-2.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+}
+
+.task-2 .item-1 {
+  grid-row: 3/6;
+  grid-column: 2/6;
+}
+
+.task-2 .item-2 {
+  grid-row: 3/6;
+  grid-column: 6/12;
+}
+
+/* Task 3.1 - Responsive Layout using 12 Columns Grid*/
+
+.task-3-1.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 10fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (min-width: 720px) {
+  .task-3-1.container {
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .task-3-1 .header {
+    grid-row: 1;
+    grid-column: 1/13;
+  }
+
+  .task-3-1 .navigation {
+    grid-row: 2;
+    grid-column: 1/13;
+  }
+
+  .task-3-1 .main {
+    grid-row: 3/12;
+    grid-column: 2/13;
+  }
+
+  .task-3-1 .sidebar {
+    grid-row: 3/12;
+    grid-column: 1/2;
+  }
+
+  .task-3-1 .ads {
+    grid-row: 12;
+  }
+
+  .task-3-1 .footer {
+    grid-row: 12;
+    grid-column: 2/13;
+  }
+}
+
+@media (min-width: 1020px) {
+  .task-3-1 .header {
+    /* ga kepake ? */
+  }
+
+  .task-3-1 .navigation {
+    grid-row: 2;
+    grid-column: 2/11;
+  }
+
+  .task-3-1 .main {
+    grid-row: 3/12;
+    grid-column: 2/11;
+  }
+
+  .task-3-1 .sidebar {
+    grid-row: 2/12;
+  }
+
+  .task-3-1 .ads {
+    grid-row: 2/12;
+    grid-column: 11/13;
+  }
+
+  .task-3-1 .footer {
+    grid-column: 1/13;
+  }
+}
+
+/* Task 3.2 - Responsive Layout using grid-template-areas*/
+
+.task-3-2.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 50px 500px 50px 50px 50px;
+  grid-template-areas: 
+    "header"
+    "navigation"
+    "main"
+    "sidebar"
+    "ads"
+    "footer";
+}
+
+.task-3-2 .header {
+  grid-area: header;
+}
+
+.task-3-2 .navigation {
+  grid-area: navigation;
+}
+
+.task-3-2 .ads {
+  grid-area: ads;
+}
+
+.task-3-2 .sidebar {
+  grid-area: sidebar;
+}
+
+.task-3-2 .main {
+  grid-area: main;
+}
+
+.task-3-2 .footer {
+  grid-area: footer;
+}
+
+@media (min-width: 720px) {
+  .task-3-2.container {
+    grid-template-columns: 200px 650px;
+    grid-template-rows: 50px 50px 600px 50px;
+    grid-template-areas: 
+      "header     header"
+      "navigation navigation"
+      "sidebar    main"
+      "ads        footer";
+  }
+}
+
+@media (min-width: 1020px) {
+  .task-3-2.container {
+    grid-template-columns: 200px 600px 200px;
+    grid-template-rows: 50px 50px 600px 50px;
+    grid-template-areas: 
+      "header  header     header"
+      "sidebar navigation ads"
+      "sidebar main       ads"
+      "footer  footer     footer";
+  }
+}
+
+/* Task 4 - Responsive Layout Without Media Query*/
+
+.task-4.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.task-4 .item-5 {
+  /* ga kepake ? */
+}
+
+/* Task 5 - 12 x 12 Chess Grid*/
+
+.task-5.container {
+  display: grid;
+  grid-template-rows: repeat(12, 58px);
+  grid-template-columns: repeat(12, 75px);
+}
+
+.task-5 .item-1 {
+  grid-row: 10/13;
+  grid-column: 10/13;
+}
+
+.task-5 .item-2 {
+  grid-row: 4/7;
+  grid-column: 4/7;
+}
+
+.task-5 .item-3 {
+  grid-row: 7/10;
+  grid-column: 7/10;
+}
+
+.task-5 .item-4 {
+  grid-row: 1/4;
+  grid-column: 1/4;
+}
