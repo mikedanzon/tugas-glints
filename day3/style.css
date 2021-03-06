@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("img/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.font-bit-bald {
+    font-weight: 600;
+}
+
+.photo {
+    height: auto;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.header-photo {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.header-name {
+    padding-left: 50px;
+    padding-top: 22px;
+    font-size: 50px;
+}
+
+.main {
+    padding-left: 100px;
+}
+
+.footer {
+    position: fixed;
+    padding-left: 10px;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+}
