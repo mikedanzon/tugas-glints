@@ -3,9 +3,6 @@
     margin: 0px;
     /* border: 1px solid white; */
 }
-
-/* @media only screen and (min-width: 100px) and (max-width: 600px) {
-} */
 /* Navbar */
 .navbar {
     background: black;
@@ -33,6 +30,20 @@
 .carousel-inner {
     max-height: 65vh !important;
 }
+@media (max-width: 520px) {
+    .main-intro {
+        display: block;
+        padding-top: 15px;
+    }
+    .first-main {
+        margin: auto;
+    }
+    .img-main {
+        padding-top: 10px;
+        margin-left: 30% !important;
+        margin: auto;
+    }
+}
 /* End of Main */
 /* Card Main */
 .card-main {
@@ -43,6 +54,22 @@
     padding-right: 40px;
     padding-left: 40px;
     background: rgba(0, 0, 0, 0.973);
+}
+
+.card-text-mobile {
+    display: none;
+}
+
+@media (max-width: 520px) {
+    .card-text {
+        display: none;
+    }
+    .card-text-mobile {
+        display: block;
+    }
+    .card-main > .card > .card-body > a {
+        font-size: 9px;
+    }
 }
 /* End of Card Main */
 /* Skills */
@@ -208,6 +235,31 @@
 .hire-me-right-2 {
     margin-top: -20px;
     font-size: 50px;
+}
+@media (max-width: 520px) {
+    .hire-me {
+        display: block;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .hire-me-left {
+        padding-bottom: 50px;
+        margin: auto;
+    }
+
+    .hire-me-right {
+        margin: auto;
+    }
+
+    .hire-me-left-2 > button {
+        font-size: 15px;
+    }
+
+    .hire-me-right-2 {
+        font-size: 35px;
+    }
 }
 /* End of Contact */
 /* Footer */
