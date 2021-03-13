@@ -38,17 +38,21 @@
 .card-main {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
     background: rgba(0, 0, 0, 0.973);
 }
 /* End of Card Main */
 /* Skills */
 .skills {
     text-align: center;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 140px;
     padding-right: 40px;
     padding-left: 40px;
-    background: rgba(0, 0, 0, 0.973);
+    background: black;
     color: whitesmoke;
 }
 .skills > .skills-top > .border {
@@ -181,6 +185,31 @@
     border-radius: 7px;
 }
 /* End of Skills */
+/* Contact */
+.hire-me {
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(0, 0, 0, 0.973);
+    color: white;
+    font-size: 24px;
+}
+.hire-me-left {
+    width: 50%;
+}
+.hire-me-left-2 > button {
+    font-size: 20px;
+    border-radius: 7px;
+}
+.hire-me-right {
+    width: 50%;
+}
+.hire-me-right-2 {
+    margin-top: -20px;
+    font-size: 50px;
+}
+/* End of Contact */
 /* Footer */
 .footer-dark {
     padding:50px 0;
