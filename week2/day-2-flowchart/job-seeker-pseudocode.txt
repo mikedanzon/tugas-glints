@@ -1,0 +1,25 @@
+1. Finding a job online
+
+2. Open Google Chrome
+
+3. Open link linkedin.com 
+
+4. Have linked in account ?
+        if no = 1. Sign up
+                2. Login your linked in account
+                3. Go to your account page
+                4. Fill details about you on your profile page 
+            else
+                Login your linked in account
+
+5. Open job search
+
+6. Search the job you are looking for
+
+7. Found the best job ?
+        if no = Keep trying until find the best job
+        
+8. Apply job
+
+9. Finished
+        

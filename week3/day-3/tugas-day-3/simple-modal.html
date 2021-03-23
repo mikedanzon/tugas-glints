@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./simple-modal.css">
+</head>
+<body>
+
+  <h2>Modal Example</h2>
+  <!--1. Trigger/Open The Modal -->
+  <button id="showModal">Show Modal</button>
+
+  <!--2. The Modal -->
+  <div id="modal" class="modal">
+    <!--3. Modal content -->
+    <div class="modal-content">
+      <span class="close">X</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+
+  <script>
+  //4. Get the modal
+  const getModal = document.getElementById("modal");
+
+  //5. Get the button that opens the modal
+  const buttonModal = document.getElementById("showModal");
+
+  //6. Get the <span> element that closes the modal
+  const spanModal = document.getElementsByClassName("close")[0];
+
+  //7. When the user clicks the button, open the modal 
+  buttonModal.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  //8. When the user clicks on <span> (x), close the modal
+  spanModal.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  //9. When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  </script>
+</body>
+</html>
